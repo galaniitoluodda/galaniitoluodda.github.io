@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,700');
 
 .page-header
 {
@@ -13,4 +13,12 @@
 .project-name
 {
   font-family: "Ubuntu", sans-serif;
+}
+
+.project-tagline
+{
+  margin-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-weight: 300;
 }
