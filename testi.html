@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testisivu</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <p>testi:</p>
+    <p id="result"></p>
+
+
+<button>Get JSON data</button>
+
+<div></div>
+
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("testi.json", function(result){
+      $.each(result, function(i, field){
+        $("div").append(field + " ");
+      });
+    });
+  });
+});
+</script>
+  </body>
+</html>
